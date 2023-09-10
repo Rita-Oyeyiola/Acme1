@@ -59,16 +59,17 @@ header li {
     padding: 0 20px 0 20px;
 }
 
-header "branding" {
+header #branding {
     float: left;
 }
 
-header "branding" h1{
+header #branding h1{
     margin: 0;
 }
 
 header nav{
     float: right;
+    margin-top: 10px;
 
 }
 
@@ -85,9 +86,11 @@ header a:hover{
 /* Showcase */
 #showcase{
     min-height: 400px;
-    background:url('../img/rename.jpg') no-repeat 0 -100px;
+    background:url('../img/New.jpg') no-repeat 0 -400px;
+    background-size: cover;
     text-align: center;
-    color: white;
+    width:100%;
+    color:white;
 }
 
 #showcase h1{
@@ -106,6 +109,10 @@ header a:hover{
     padding: 15px;
     color: white;
     background: #35424a;
+}
+
+#Newsletter h1{
+    float: left;
 }
 
 #Newsletter form{
@@ -133,7 +140,7 @@ header a:hover{
 }
 
 #boxes .box img{
-    width: 50px;
+    width: 90px;
 }
 
 /* side bar */
@@ -176,28 +183,30 @@ footer{
 @media(max-width: 768px){
    header #branding,
    header nav,
-   header nav li
-   #Newsletter h1
-   #Newsletter form
-    #boxes .box{
-    float: none;
-    text-align: center;
-    width: 100%;
-   }
+   header nav li,
+   #Newsletter h1,
+   #Newsletter form,
+   #boxes .box,
+   article#main-col,
+   aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+        }
    header{
-    padding-bottom: 20px;
-   }
- #showcase h1{
-    margin-top: 40px;
- }
- #Newsletter button{
-    display: block;
-    width:100%
- }
+        padding-bottom: 20px;
+        }
+    #showcase h1{
+        margin-top: 40px;
+    }
+    #Newsletter button, .quote button{
+        display: block;
+        width:100%
+    }
 
- #Newsletter form input[type='email']{
-    width: 100px;
-    margin-bottom: 5px;
-   }
+    #Newsletter form input[type='email'], .quote textarea{
+        width: 100px;
+        margin-bottom: 5px;
+    }
 
 }
